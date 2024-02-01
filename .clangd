@@ -1,0 +1,23 @@
+Diagnostics:
+  ClangTidy:
+    Add:
+      [
+        bugprone*,
+        misc*,
+        clang-diagnostic*,
+        clang-analyzer*,
+        cppcoreguidelines*,
+        concurrency*,
+        performance*,
+        portability*,
+        modernize*,
+      ]
+    Remove: 
+      [
+        modernize-use-trailing-return-type,
+        modernize-use-nodiscard,
+        cppcoreguidelines-init-variables,
+        bugprone-easily-swappable-parameters,
+        misc-no-recursion,
+        readability*,
+      ]
