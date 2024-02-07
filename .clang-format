@@ -1,4 +1,5 @@
 AllowShortIfStatementsOnASingleLine: AllIfsAndElse
 IndentCaseLabels: true
 AllowShortCaseLabelsOnASingleLine: true
+AllowShortLoopsOnASingleLine: true
 IndentWidth: 4
