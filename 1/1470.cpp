@@ -9,7 +9,7 @@ bool fold(vector<int> v, const bool left = true) {
     const int sv = (int)v.size();
     if (sv < m) return false;
     for (int i = 0; i < sv; ++i) {
-        vector<int> x(&v[0], &v[i]);
+        vector<int> x(v.data(), &v[i]);
         vector<int> y(&v[i], &v[sv]);
         left ? reverse(y.begin(), y.end()) : reverse(x.begin(), x.end());
         int size = max(i, sv - i);

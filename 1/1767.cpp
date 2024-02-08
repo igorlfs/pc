@@ -42,18 +42,18 @@ int main() {
             }
         }
         int perdendo_peso = peso;
-        int não_usados = 0;
+        int nao_usados = 0;
         for (int k = n - 1; k > 0; --k) {
             if (valores[k][perdendo_peso] != valores[k - 1][perdendo_peso]) {
                 perdendo_peso -= pacotes[k].second;
             } else {
-                não_usados++;
+                nao_usados++;
             }
         }
-        if (valores[0][perdendo_peso] == 0) não_usados++;
+        if (valores[0][perdendo_peso] == 0) nao_usados++;
         cout << brinquedos << " brinquedos" << endl;
         cout << "Peso: " << peso << " kg" << endl;
-        cout << "sobra(m) " << não_usados << " pacote(s)" << endl << endl;
+        cout << "sobra(m) " << nao_usados << " pacote(s)" << endl << endl;
     }
     return 0;
 }

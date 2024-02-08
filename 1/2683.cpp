@@ -41,7 +41,7 @@ int func(const graph &g, bool inc) {
         int u = get(weights, visited, n, inc);
         visited[u] = true;
         for (int v = 0; v < n; v++)
-            if (g[u][v] && !visited[v]) {
+            if ((g[u][v] != 0) && !visited[v]) {
                 if (inc) {
                     if (g[u][v] > weights[v]) {
                         parent[v] = u;

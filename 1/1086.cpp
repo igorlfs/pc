@@ -21,14 +21,14 @@ int tab(const vector<int> &X, const int Y, const int Z, const int L,
                     if (aux != 0) t++;
                     if (j != -1) j++;
                     break;
-                } else if (X[i] + aux > Z) break;
+                }
+                if (X[i] + aux > Z) break;
             }
         }
         if (places != num_places) return -1;
         return t;
-    } else {
-        return -1;
     }
+    return -1;
 }
 
 int main() {

@@ -29,7 +29,7 @@ int func(const graph &g, const int src) {
         int u = min_dist(dist, visited, n);
         visited[u] = true;
         for (int v = 0; v < n; v++) {
-            if (!visited[v] && g[u][v] && dist[u] != INF &&
+            if (!visited[v] && (g[u][v] != 0) && dist[u] != INF &&
                 dist[u] + g[u][v] < dist[v]) {
                 dist[v] = dist[u] + g[u][v];
             }
