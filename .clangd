@@ -6,13 +6,11 @@ Diagnostics:
       [
         bugprone*,
         misc*,
-        clang-diagnostic*,
-        clang-analyzer*,
         cppcoreguidelines*,
-        concurrency*,
         performance*,
         portability*,
         modernize*,
+        readability*,
       ]
     Remove: 
       [
@@ -22,5 +20,12 @@ Diagnostics:
         bugprone-easily-swappable-parameters,
         cppcoreguidelines-avoid-non-const-global-variables,
         misc-no-recursion,
-        readability*,
+        readability-braces-around-statements,
+        readability-identifier-length,
+        readability-isolate-declaration
       ]
+    CheckOptions:
+      readability-identifier-naming.VariableCase: lower_case
+      readability-identifier-naming.FunctionCase: lower_case
+      readability-identifier-naming.GlobalConstantCase: UPPER_CASE
+      readability-identifier-naming.VariableIgnoredRegexp: "[A-Z]"
