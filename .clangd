@@ -22,7 +22,8 @@ Diagnostics:
         misc-no-recursion,
         readability-braces-around-statements,
         readability-identifier-length,
-        readability-isolate-declaration
+        readability-isolate-declaration,
+        readability-function-cognitive-complexity
       ]
     CheckOptions:
       readability-identifier-naming.VariableCase: lower_case
