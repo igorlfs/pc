@@ -1,3 +1,4 @@
+ReflowComments: false
 AllowShortIfStatementsOnASingleLine: AllIfsAndElse
 IndentCaseLabels: true
 AllowShortCaseLabelsOnASingleLine: true
