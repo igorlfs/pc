@@ -1,3 +1,4 @@
+ColumnLimit: 100
 ReflowComments: false
 AllowShortIfStatementsOnASingleLine: AllIfsAndElse
 IndentCaseLabels: true

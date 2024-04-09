@@ -23,6 +23,8 @@ Diagnostics:
         readability-braces-around-statements,
         readability-identifier-length,
         readability-isolate-declaration,
+        readability-magic-numbers,
+        cppcoreguidelines-avoid-magic-numbers,
         readability-function-cognitive-complexity
       ]
     CheckOptions:
