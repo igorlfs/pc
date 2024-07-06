@@ -20,6 +20,7 @@ Diagnostics:
         bugprone-easily-swappable-parameters,
         cppcoreguidelines-avoid-non-const-global-variables,
         misc-no-recursion,
+        misc-non-private-member-variables-in-classes,
         readability-braces-around-statements,
         readability-identifier-length,
         readability-isolate-declaration,
